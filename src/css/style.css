@@ -1,4 +1,22 @@
 body {
   background-color: black;
-  color: wheat;
+  color: goldenrod;
+}
+
+.daysList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 24px;
+}
+
+.searchWeatherForm {
+  display: flex;
+  justify-content: center;
+}
+.searchWeatherInput {
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: brown;
 }

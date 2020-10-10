@@ -1,12 +1,13 @@
 {{#each this}}
 <li>
-    <h1>input.value</h1>
-    <h2>{{dt}}</h2>
-    <p>{{sunrise}}</p>
-    <p>{{sunset}}</p>
-    <p>{{presure}}</p>
-    <p>{{humidity}}</p>
-    <p>{{weather.main}}<span>{{weather.icon}}</span></p>
-    <p>{{speed}}</p>
+    <h1>City: {{name}}</h1>
+    <h2>Date: {{dt}}</h2>
+    <p> Temperature: {{main.temp}}&#8451</p>
+    <p> Sunrise: {{sys.sunrise}}</p>
+    <p>Sunset: {{sys.sunset}}</p>
+    <p>Pressure: {{main.pressure}} mb</p>
+    <p>Humidity: {{main.humidity}} %</p>
+    <img src="https://openweathermap.org/img/w/{{weather.0.icon}}.png" alt="{{weather.0.main}}">
+    <p>Wind speed: {{wind.speed}} km/s</p>
 </li>
 {{/each}}
